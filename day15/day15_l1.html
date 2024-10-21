@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Embed</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #007BFF, #6C757D);
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        iframe {
+            width: 80%;
+            height: 75vh;
+            border-radius: 10px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .lab-link {
+            background-color: #007BFF;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+            transition: background-color 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+        .lab-link:hover {
+            background-color: #0056b3;
+        }
+
+        .download-button {
+            padding: 12px 25px;
+            background-color: #28A745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+            margin-top: 20px;
+        }
+
+        .download-button:hover {
+            background-color: #218838;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        .mentor-info {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        @media (max-width: 768px) {
+            iframe {
+                width: 90%;
+                height: 60vh;
+            }
+
+            .lab-link, .download-button {
+                font-size: 16px;
+                padding: 10px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hosting a Web App on Google Cloud Using Compute Engine</h1>
+        <a class="lab-link" href="https://www.cloudskillsboost.google/course_templates/754/labs/461560" target="_blank">Access Lab 1</a>
+        <!-- <iframe src="https://drive.google.com/file/d/1TfOpc0H1vJ0NImM0P1S3VEE9xj6g5Us9/preview" width="640" height="480" allow="autoplay; encrypted-media" title="Tutorial Video"></iframe> -->
+        <a class="download-button" href="https://github.com/QUICK-GCP-LAB/2-Minutes-Labs-Solutions/blob/main/Hosting%20a%20Web%20App%20on%20Google%20Cloud%20Using%20Compute%20Engine/Hosting%20a%20Web%20App%20on%20Google%20Cloud%20Using%20Compute%20Engine.md" download>Download Lab Files</a>
+        
+        <div class="mentor-info">
+            <p><strong>Mentor Name:</strong> XXXXX</p>
+            <p><strong>Number:</strong> 1234567890</p>
+        </div>
+    </div>
+</body>
+</html>
