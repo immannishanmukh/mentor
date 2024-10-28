@@ -3,75 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hover and Click Example</title>
+    <title>Video Embed</title>
     <style>
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-            margin: 0; /* Remove default margin */
-        }
-        .container {
-            display: flex; /* Change to flexbox for horizontal alignment */
-            flex-wrap: nowrap; /* Prevent wrapping to keep all boxes in one line */
-            gap: 40px; /* Space between boxes */
-        }
-        .box {
-            position: relative;
-            width: 250px;
-            height: 250px;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s;
-            cursor: pointer;
-        }
-        .box:hover {
-            transform: scale(1.05);
-        }
-        .box img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 10px;
-        }
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            font-size: 24px;
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-        .box:hover .overlay {
-            opacity: 1;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #007BFF, #6C757D);
+            font-family: Arial, sans-serif;
+            color: #fff;
         }
 
-        /* Responsive design */
-        @media (max-width: 600px) {
-            .container {
-                flex-direction: column; /* Stack boxes vertically on small screens */
-                align-items: center; /* Center items in the column */
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        iframe {
+            width: 80%;
+            height: 75vh;
+            border-radius: 10px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .lab-link {
+            background-color: #007BFF;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+            transition: background-color 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+        .lab-link:hover {
+            background-color: #0056b3;
+        }
+
+        .download-button {
+            padding: 12px 25px;
+            background-color: #28A745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+            margin-top: 20px;
+        }
+
+        .download-button:hover {
+            background-color: #218838;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        .mentor-info {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        @media (max-width: 768px) {
+            iframe {
+                width: 90%;
+                height: 60vh;
+            }
+
+            .lab-link, .download-button {
+                font-size: 16px;
+                padding: 10px 15px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="box" onclick="window.location.href='./day8_l1.html'">
-            <img src="../img/lab1.jpg" alt="Image 1">
-            <div class="overlay">LAB 1</div>
-        </div>
+        <h1>SHUSMA</h1>
+        <a href="https://www.cloudskillsboost.google/public_profiles/40fe69f8-29dc-4e97-b684-c62b85232d6d">SURISETTI SRINIVAS</a> <br>
+        <a href="https://www.cloudskillsboost.google/public_profiles/fb1d5f21-79be-4553-974d-0d201d354af7">THOTA ABHI CHANDRA</a>  <br>
+        <a href="https://www.cloudskillsboost.google/public_profiles/68488a74-006d-4738-a7f9-fdb91219f1f2">GOLI SAI RAM</a>  <br>
+        <a href="https://www.cloudskillsboost.google/public_profiles/1ecc4bab-9ad5-4a6e-a83c-226d703d7c49">VINAYA SARAYU ALLAMPALLI</a> <br>
+        <a href="https://www.cloudskillsboost.google/public_profiles/9730bc0a-292b-4650-b432-63f29f244353">Basa Vedhika Eshani</a> <br>
+        <a href="https://www.cloudskillsboost.google/public_profiles/c54bccc4-9589-4826-8c07-44f386bf14f8">Dulam Rohit Sai Anjan</a> <br>
+        <a href="https://www.cloudskillsboost.google/public_profiles/b0bf325c-904b-4374-a696-6c3497afcd7f">Jaya Sri Durga Perumalla</a> <br>
+        <a href="https://www.cloudskillsboost.google/public_profiles/b371d838-551a-4448-8026-a7c1a2fd4b93">Charakapu jayalakshmi</a> <br>       
     </div>
-
 </body>
 </html>

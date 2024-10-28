@@ -3,86 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hover and Click Example</title>
+    <title>Coming Soon</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
             height: 100vh;
+            margin: 0;
+            text-align: center;
             background-color: #f0f0f0;
-            margin: 0; /* Remove default margin */
         }
-        .container {
-            display: flex; /* Change to flexbox for horizontal alignment */
-            flex-wrap: nowrap; /* Prevent wrapping to keep all boxes in one line */
-            gap: 40px; /* Space between boxes */
+        .top {
+            margin-top: 20%;
         }
-        .box {
-            position: relative;
-            width: 250px;
-            height: 250px;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s;
+        .link {
+            color: blue;
+            text-decoration: underline;
             cursor: pointer;
+            font-size: 18px; /* Increased link font size */
         }
-        .box:hover {
-            transform: scale(1.05);
+        .bottom {
+            margin-bottom: 20px;
+            font-size: 32px; /* Increased font size */
+            font-weight: bold; /* Make text bold */
         }
-        .box img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 10px;
+        .image-container {
+            margin-top: 20px;
         }
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            font-size: 24px;
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-        .box:hover .overlay {
-            opacity: 1;
-        }
-
-        /* Responsive design */
-        @media (max-width: 600px) {
-            .container {
-                flex-direction: column; /* Stack boxes vertically on small screens */
-                align-items: center; /* Center items in the column */
-            }
+        img {
+            max-width: 90%; /* Adjust image size */
+            height: auto;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="box" onclick="window.location.href='./day3_l1.html'">
-            <img src="../img/lab1.jpg" alt="Image 1">
-            <div class="overlay">LAB 1 </div>
-        <!-- </div>
-        <div class="box" onclick="window.location.href='./day3_l2.html'">
-            <img src="../img/lab2.png" alt="Image 2">
-            <div class="overlay">LAB 2</div>
-        </div>
-        <div class="box" onclick="window.location.href='./day3_l3.html'">
-            <img src="../img/lab3.png" alt="Image 3">
-            <div class="overlay">LAB 3</div>
-        </div>
-        <div class="box" onclick="window.location.href='./day3_l4.html'">
-            <img src="../img/test.png" alt="Image 4">
-            <div class="overlay">FINAL TEST</div>
-        </div> -->
+    <div>
+        <h1>VASANTHI</h1>
+        <a href="https://www.cloudskillsboost.google/public_profiles/bf766caf-988b-4b64-8ca5-5bb3a43d9785">Kudupudi Shanmukha</a> <br>
+        <a href="https://www.cloudskillsboost.google/public_profiles/53a38a0c-acdb-4c6c-b90f-fad0b6067dc9">DATLA SHALINI</a> <br>
+        <a href="https://www.cloudskillsboost.google/public_profiles/a33d8ccf%2Df733%2D4260%2Da2cd%2Df157460d99d9">akula veera venkata sai durga</a> <br>
+        <a href="https://www.cloudskillsboost.google/public_profiles/88c7f7e3-c2ac-4b8d-bc26-ac1dad2f17ea">NIHAL SHANKAR KARANAM</a> <br>
+        <a href="https://www.cloudskillsboost.google/public_profiles/3e63c396-0e6c-4d30-9e4e-eea3003021f9">Nakka Harika</a> <br>
+        <a href="https://www.cloudskillsboost.google/public_profiles/ab8bb39b-e9a0-442d-b368-a685e63f8d96">Mounika Vemala</a> <br>
+
     </div>
 
 </body>
