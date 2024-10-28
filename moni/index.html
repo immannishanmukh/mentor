@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDG ACET GenAI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #eaeaea;
+            padding: 20px; /* Add padding for body */
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Four columns */
+            gap: 20px; /* Space between boxes */
+            max-width: 1200px; /* Limit max width */
+            margin: 0 auto; /* Center the container */
+        }
+        .box {
+            position: relative;
+            height: 300px; /* Fixed height for consistency */
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s;
+        }
+        .box:hover {
+            transform: scale(1.05);
+        }
+        .box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 24px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .box:hover .overlay {
+            opacity: 1;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .box {
+                height: 200px; /* Adjust height on smaller screens */
+            }
+            .overlay {
+                font-size: 18px; /* Smaller text size */
+            }
+            .container {
+                grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                grid-template-columns: 1fr; /* One column on extra small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+<img src="./img/top.jpg" height="250" width="1500">
+<div class="container">
+    <div class="box" role="button" onclick="window.location.href='./day1/day1.html'">
+        <img src="./img/day1.png" alt="Day 1">
+        <div class="overlay">AKANSHA</div>
+    </div>
+    <div class="box" role="button" onclick="window.location.href='./day2/day2.html'">
+        <img src="./img/day2.png" alt="Day 2">
+        <div class="overlay">YASASWINI</div>
+    </div>
+    <div class="box" role="button" onclick="window.location.href='./day3/day3.html'">
+        <img src="./img/day3.png" alt="Day 7">
+        <div class="overlay">VASANTHI</div>
+    </div>
+    <div class="box" role="button" onclick="window.location.href='./day4/day4.html'">
+        <img src="./img/day4.png" alt="Day 3">
+        <div class="overlay">NITHIN</div>
+    </div>
+    <div class="box" role="button" onclick="window.location.href='./day5/day5.html'">
+        <img src="./img/day5.png" alt="Day 5">
+        <div class="overlay">KUMAR RAJ</div>
+    </div>
+    <div class="box" role="button" onclick="window.location.href='./day6/day6.html'">
+        <img src="./img/day6.png" alt="Day 6">
+        <div class="overlay">UMA NANDINI</div>
+    </div>
+    <div class="box" role="button" onclick="window.location.href='./day7/day7.html'">
+        <img src="./img/day7.png" alt="Day 3">
+        <div class="overlay">PRANATHI</div>
+    </div>
+    <div class="box" role="button" onclick="window.location.href='./day8/day8.html'">
+        <img src="./img/day12.png" alt="Day 8">
+        <div class="overlay">SUSHMA</div>
+    </div>
+    <div class="box" role="button" onclick="window.location.href='./day9/day9.html'">
+        <img src="./img/day8.png" alt="Day 9">
+        <div class="overlay">HARIKA</div>
+    </div>
+    <div class="box" role="button" onclick="window.location.href='./day10/day10.html'">
+        <img src="./img/day9.png" alt="Day 10">
+        <div class="overlay">PREM</div>
+    </div>
+    <div class="box" role="button" onclick="window.location.href='./day11/day11.html'">
+        <img src="./img/day10.png" alt="Day 11">
+        <div class="overlay">CORE TEAM</div>
+    </div>
+    <!-- <div class="box" role="button" onclick="window.location.href='./day12/day12.html'">
+        <img src="./img/day12.png" alt="Day 12">
+        <div class="overlay">DAY 12</div>
+    </div> -->
+    <!-- <div class="box" role="button" onclick="window.location.href='./day13/day13.html'">
+        <img src="./img/day13.png" alt="Day 13">
+        <div class="overlay">DAY 13</div>
+    </div>
+    <div class="box" role="button" onclick="window.location.href='./day14/day14.html'">
+        <img src="./img/day14.jpg" alt="Day 14">
+        <div class="overlay">DAY 14</div>
+    </div>
+    <div class="box" role="button" onclick="window.location.href='./day15/day15.html'">
+        <img src="./img/day15.jpg" alt="Day 15">
+        <div class="overlay">DAY 15</div>
+    </div> -->
+    <!-- <div class="box" role="button" onclick="window.location.href='./day16/day16.html'">
+        <img src="./img/day16.png" alt="Day 16">
+        <div class="overlay">DAY 16</div>
+    </div> -->
+</div>
+
+</body>
+</html>
